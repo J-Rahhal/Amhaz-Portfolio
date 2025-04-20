@@ -48,13 +48,13 @@ const Hero = () => {
   const text = "AMHAZ";
 
   return (
-    <section className="h-screen flex flex-col items-center justify-center bg-white text-black text-6xl font-extrabold">
+    <section className="h-screen flex flex-col items-center justify-center bg-black text-white text-6xl font-extrabold">
       <div className="flex gap-1 text-2xl md:text-3xl text-[#D4AF37]">
         {slogan.split("").map((char, i) => (
           <span
             key={i}
             ref={(el) => (sloganLetters.current[i] = el)}
-            className="inline-block drop-shadow-[2px_2px_2px_rgba(0,0,0,0.5)]"
+            className="inline-block drop-shadow-[2px_2px_2px_rgba(255,255,255,0.5)]"
           >
             {char}
           </span>
@@ -65,7 +65,7 @@ const Hero = () => {
           <span
             key={i}
             ref={(el) => (textLetters.current[i] = el)}
-            className="inline-block drop-shadow-[2px_2px_2px_rgba(0,0,0,0.5)]"
+            className="inline-block drop-shadow-[2px_2px_2px_rgba(255,255,255,0.5)]"
           >
             {char}
           </span>
