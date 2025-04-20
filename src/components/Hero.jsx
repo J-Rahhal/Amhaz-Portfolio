@@ -117,13 +117,13 @@ const Hero = () => {
           <img
             key={idx}
             src={src}
-            className="fly-img w-48 h-96 absolute rounded-lg shadow-lg object-cover rotate-8"
+            className="fly-img w-48 h-96 absolute rounded-lg shadow-lg object-cover rotate-8 lg:w-62 lg:h-132"
             alt={`img-${idx}`}
           />
         ))}
       </div>
 
-      <div className="flex gap-1 text-2xl md:text-3xl text-[#D4AF37] font-bold ">
+      <div className="flex gap-1 text-2xl md:text-3xl text-[#D4AF37] font-bold lg:text-5xl ">
         {slogan.split("").map((char, i) => (
           <span
             key={i}
@@ -143,7 +143,7 @@ const Hero = () => {
       <div>
         <h1
           ref={textRef}
-          className="text-8xl font-bold z-20 text-center leading-snug drop-shadow-[2px_2px_2px_rgba(255,255,255,0.5)] md:text-9xl"
+          className="text-8xl font-bold z-20 text-center leading-snug drop-shadow-[2px_2px_2px_rgba(255,255,255,0.5)] md:text-9xl lg:text-[200px]"
         >
           AMHAZ
         </h1>
